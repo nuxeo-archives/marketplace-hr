@@ -1,4 +1,4 @@
-<project name="nuxeo-assembly"
+<project name="hr-assembly"
          default="build"
          xmlns:nx="urn:nuxeo-build"
          xmlns:artifact="urn:nuxeo-artifact">
@@ -26,7 +26,6 @@
     <zip destfile="${maven.project.build.directory}/${maven.project.artifactId}-${nuxeo.hr.version}.zip"
          basedir="${maven.project.build.directory}/marketplace" />
     <artifact:attach file="${maven.project.build.directory}/${maven.project.artifactId}-${nuxeo.hr.version}.zip"
-                     target="${maven.project.groupId}:${maven.project.artifactId}"
                      type="zip" />
   </target>
 
