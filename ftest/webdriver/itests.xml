@@ -6,16 +6,12 @@
            uri="urn:nuxeo-artifact" />
   <taskdef resource="net/sf/antcontrib/antlib.xml" />
 
-  <!-- Base distribution (nuxeo-cap, nuxeo-dm, ...) -->
-  <property name="wizard.preset" value="nuxeo-cap" />
-
   <property name="out.dir" value="${maven.project.build.directory}" />
   <unzip dest="${out.dir}/" overwrite="false">
     <artifact:resolveFile key="org.nuxeo:nuxeo-ftest::zip" />
   </unzip>
   <import file="${out.dir}/nuxeo-ftest.xml" />
 
-  <!-- Instruction for installing the MP to be tested -->
   <!-- named market-place instead of marketplace to work around NXCONNECT-279 -->
   <property name="mp.install"
             value="file:${out.dir}/market-place-hr-mp-${nuxeo.hr.version}.zip" />
