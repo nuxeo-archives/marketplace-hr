@@ -1,2 +1,2 @@
 The Nuxeo HR package ("nuxeo-hr") is replaced by the "nuxeo-timeoff" package since Nuxeo 8.1.
-
+See https://github.com/nuxeo/nuxeo-timeoff
